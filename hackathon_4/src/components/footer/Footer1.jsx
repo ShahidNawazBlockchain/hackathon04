@@ -3,7 +3,7 @@ import Card from "./footer";
 import Vector from "../../assets/images/Vector.png";
 function Footer1() {
   return (
-    <div className="container mx-auto font-bold">
+    <div className="container mx-auto font-bold py-10">
       <div className="mx-10 mt-10 flex flex-col  md:flex-row justify-between">
         <div>
           <Card
