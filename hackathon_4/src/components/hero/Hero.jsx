@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "./Navbar";
 
-function Hero() {
+function Hero({order}) {
+
   return (
     <div className="container mx-auto">
-      <Navbar />
+      <Navbar order={order} />
 
       <div class="w-full pt-40  text-black text-[64px] font-bold ">
         Award-winning <br /> development studio <br /> based in Denmark.

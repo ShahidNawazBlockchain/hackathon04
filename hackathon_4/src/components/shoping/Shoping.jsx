@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
-export default function Shopping() {
+export default function Shopping({ setOrder }) {
   const [products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
@@ -68,7 +68,10 @@ export default function Shopping() {
                         className="image  overflow-hidden rounded-lg"
                         alt={`Product ${index + 1}`}
                       />
-                      <button className="bg-green-500 text-white px-3 py-2 rounded-full max-w-[100%] button">
+                      <button
+                        onClick={() => setOrder((prev)=> prev+1)}
+                        className="bg-green-500 text-white px-3 py-2 rounded-full max-w-[100%] button"
+                      >
                         Add to Cart
                       </button>
                     </div>

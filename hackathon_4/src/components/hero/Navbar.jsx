@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Images from "../../assets/images/phframerlogo@2x.png";
 import menu from "../../assets/images/Vector.png";
 
-function Navbar() {
+function Navbar({ order }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const openMenu = () => {
@@ -29,7 +29,7 @@ function Navbar() {
           Contact
         </button>
         <button className="text-white text-xl font-bold  font-['Mona-Sans'] bg-black p-3 rounded-lg">
-          Cart(0)
+          Cart({order})
         </button>
 
         <div
